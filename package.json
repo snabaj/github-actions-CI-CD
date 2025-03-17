@@ -12,7 +12,9 @@
     "test": "npx cypress run --browser electron",
     "test-component": "npx cypress run --component",
     "test-gui": "npx cypress open",
-    "lint": "cd client && npm run lint"
+    "lint:client": "cd client && npm run lint",
+    "lint:server": "cd server && npm run lint",
+    "lint": "concurrently \"npm run lint:client\" \"npm run lint:server\""
   },
   "keywords": [],
   "author": "",
