@@ -7,10 +7,12 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-  },
-    test: {
-      globals: true,
-      environment: 'happy-dom',
-      setupFiles: './src/tests/setup.js',
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        secure: false,
+      },
     },
+  },
 });
