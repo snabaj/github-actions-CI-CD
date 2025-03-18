@@ -33,7 +33,7 @@ This project is a full-stack application that integrates Continuous Integration 
   - [Installation](#installation)
   - [Usage](#usage)
     - [CI/CD Setup](#cicd-setup)
-    - [Screenshots of what passing tests should look like.](#screenshots-of-what-passing-tests-should-look-like)
+    - [Screenshots of passing tests](#screenshots-of-passing-tests)
   - [Contributing](#contributing)
   - [License](#license)
   - [Tests](#tests)
@@ -110,7 +110,7 @@ When the code is merged into the `main` branch:
 
 1. **Automatic Deployment:** The GitHub Action will trigger and deploy the application to Render automatically.
 
-### Screenshots of what passing tests should look like.
+### Screenshots of passing tests
 
 **Test summary for a Render deploy.**
 
