@@ -33,6 +33,7 @@ This project is a full-stack application that integrates Continuous Integration 
   - [Installation](#installation)
   - [Usage](#usage)
     - [CI/CD Setup](#cicd-setup)
+    - [Screenshots of what passing tests should look like.](#screenshots-of-what-passing-tests-should-look-like)
   - [Contributing](#contributing)
   - [License](#license)
   - [Tests](#tests)
@@ -108,6 +109,24 @@ When a Pull Request is made to the `develop` branch:
 When the code is merged into the `main` branch:
 
 1. **Automatic Deployment:** The GitHub Action will trigger and deploy the application to Render automatically.
+
+### Screenshots of what passing tests should look like.
+
+**Test summary for a Render deploy.**
+
+![Passing Render deploy](client/src/assets/Render-deploy.jpg)
+
+**Test summary for a pull request**
+
+![Passing PR test](client/src/assets/Main-pr-test.jpg)
+
+**Testing `pull request` before merging into `Develop` branch.**
+
+![Pull request test](client/src/assets/Pull-request-test.jpg)
+
+**Testing `Develop` branch before merging into `Main`**
+
+![Testing Develop branch](client/src/assets/Deploy-test-check.jpg)
 
 ## Contributing
 
