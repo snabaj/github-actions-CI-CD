@@ -18,12 +18,15 @@ jobs:
     steps:
       # Get code from repo
       - name: Checkout code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
 
       - name: Use Node.js 21.x
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: 21.x
+          
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
 
       # Install dependencies
       - name: 🧰 Install Deps
