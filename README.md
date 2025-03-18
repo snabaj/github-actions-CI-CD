@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/Node-%3E%3D14-brightgreen.svg)](https://nodejs.org/)
 [![MERN Stack](https://img.shields.io/badge/MERN-Stack-blue.svg)](https://www.mongodb.com/mern-stack)
+[![Cypress Tests](https://img.shields.io/badge/Cypress-Test%20Status-green.svg)](https://www.cypress.io/)
+
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Mongoose](https://img.shields.io/badge/Mongoose-%2300cf4b.svg?style=for-the-badge&logo=mongoose&logoColor=white)](https://mongoosejs.com/)
@@ -33,7 +35,8 @@ This project is a full-stack application that integrates Continuous Integration 
   - [Installation](#installation)
   - [Usage](#usage)
     - [CI/CD Setup](#cicd-setup)
-    - [Screenshots of passing tests](#screenshots-of-passing-tests)
+    - [Screenshots of Passing Tests](#screenshots-of-passing-tests)
+    - [🚀 **Click here to check out the deployed app on Render**](#-click-here-to-check-out-the-deployed-app-on-render)
   - [Contributing](#contributing)
   - [License](#license)
   - [Tests](#tests)
@@ -110,7 +113,7 @@ When the code is merged into the `main` branch:
 
 1. **Automatic Deployment:** The GitHub Action will trigger and deploy the application to Render automatically.
 
-### Screenshots of passing tests
+### Screenshots of Passing Tests
 
 **Test summary for a Render deploy.**
 
@@ -127,6 +130,8 @@ When the code is merged into the `main` branch:
 **Testing `Develop` branch before merging into `Main`**
 
 ![Testing Develop branch](client/src/assets/Deploy-test-check.jpg)
+
+### 🚀 **[Click here to check out the deployed app on Render](https://github-actions-ci-cd-4kk7.onrender.com/)**
 
 ## Contributing
 
