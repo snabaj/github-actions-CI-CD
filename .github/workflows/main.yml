@@ -24,9 +24,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 21.x
-          
-      - name: Cypress run
-        uses: cypress-io/github-action@v6
 
       # Install dependencies
       - name: 🧰 Install Deps
@@ -35,6 +32,10 @@ jobs:
       # Run lint
       # - name: Run Lint
       #   run: npm run lint
+
+      # Run Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
 
       # Run build
       - name: Run Build
