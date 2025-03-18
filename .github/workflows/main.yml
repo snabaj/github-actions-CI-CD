@@ -37,10 +37,6 @@ jobs:
       - name: Run Build
         run: npm run build
 
-      # Run tests
-      # - name: Run Tests
-      #   run: npm run test
-
       # Run Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6

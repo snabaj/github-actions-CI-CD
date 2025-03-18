@@ -20,16 +20,28 @@ jobs:
       # Checkout the code from the repository
       - uses: actions/checkout@v3
 
-      # Define a step named "Test"
-      - name: Test
-        # Run install and test scripts
-        run: |
-            npm install
-            npm run test
+      # Set up Node.js (same version used in main.yml)
+      - name: Use Node.js 21.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21.x
 
-      # Define a step named "Deploy"
+      # Install dependencies (same as in main.yml)
+      - name: 🧰 Install Deps
+        run: npm install
+
+      # Run build (same as in main.yml)
+      - name: Run Build
+        run: npm run build
+
+      # Run Cypress component tests (same as in main.yml, with proper configuration)
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          component: true
+
+      # Define a step for Deployment (runs only on 'main' branch)
       - name: Deploy
-        # Only run this step if the branch is main
         if: github.ref == 'refs/heads/main'
         # Set an environment variable with the deployment URL from secrets
         env:
